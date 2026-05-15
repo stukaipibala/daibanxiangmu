@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/daibanxiangmu/',
   plugins: [
     react(), 
     tailwindcss(),
@@ -13,7 +14,7 @@ export default defineConfig({
         name: '每日待办',
         short_name: '待办',
         description: '极简每日待办记录工具',
-        start_url: '/',
+        start_url: '/daibanxiangmu/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#3B82F6',
